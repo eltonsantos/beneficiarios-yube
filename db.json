@@ -1,0 +1,31 @@
+{
+  "collaborators": [
+    {
+      "id": 1,
+      "avatar": "https://avatars.githubusercontent.com/u/1292594?v=4",
+      "name": "Elton",
+      "surname": "Santos",
+      "cpf": "12345678900",
+      "benefit": "Seguro desemprego",
+      "approved": 1
+    },
+    {
+      "id": 2,
+      "avatar": "https://avatars.githubusercontent.com/u/1330847?v=4",
+      "name": "Ericson",
+      "surname": "Santos",
+      "cpf": "32165498788",
+      "benefit": "Bolsa família",
+      "approved": 0
+    },
+    {
+      "id": 3,
+      "avatar": "https://avatars.githubusercontent.com/u/78307831?s=200&v=4",
+      "name": "Vânia",
+      "surname": "Melo",
+      "cpf": "159753852654",
+      "benefit": "Seguro desemprego",
+      "approved": 1
+    }
+  ]
+}
