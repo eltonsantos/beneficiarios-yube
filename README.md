@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Beneficiários Yube" src=".github/login.png" width="160px">
+  <img alt="Beneficiários Yube" src=".github/logo.png" width="160px">
 </p>
 
 <p align="center">
@@ -48,7 +48,7 @@ $ yarn start
 
 ## 💻 Project
 
-This project was developed for testing in the company **[Yube](https://yube.com.br/)** to be Fullstack. **In May 31, 2021**. For the first version unfortunately, many features are not yet available. 🥺
+This project was developed for testing in the company **[Yube](https://yube.com.br/)** to be Fullstack, **in May 31, 2021**. For the first version, unfortunately many features are not yet available. 🥺
 
 To access the project **[Beneficiarios-Yube](https://beneficiarios-yube.netlify.app)** enter with email: **admin@yube.com** and password: **123**
 
@@ -57,6 +57,8 @@ To access the project **[Beneficiarios-Yube](https://beneficiarios-yube.netlify.
 The layout was created from absolute zero using the TailWindCSS framework.
 
 ## 🐾 Next steps
+
+###### Escreverei essa parte em português
 
 - [ ] Implementar função de adicionar dependentes 👶
 - [ ] Implementar função de mudar o parecer 📃
@@ -67,8 +69,6 @@ The layout was created from absolute zero using the TailWindCSS framework.
 - [ ] Construir filtro para mostrar os colaboradores que possuem um ou mais dependentes 👨‍👨‍👦‍👦
 - [ ] Criar uma busca por nome e cpf 🔎
 - [ ] E muito mais... ❤💪🏼
-
-###### Escreverei essa parte em português
 
 ---
 
