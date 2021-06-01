@@ -54,7 +54,7 @@ To access the project **[Beneficiarios-Yube](https://beneficiarios-yube.netlify.
 
 ## 🔖 Layout
 
-The layout was created from scratch using the TailWindCSS framework.
+The layout was created from scratch using the **TailWindCSS** framework.
 
 ## 🐾 Next steps
 
