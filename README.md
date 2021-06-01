@@ -1,5 +1,5 @@
 <p align="center">
-  <img alt="Beneficiários Yube" src=".github/logo.png" width="160px">
+  <img alt="Beneficiários Yube" src=".github/logo-app.png" width="230px">
 </p>
 
 <p align="center">
