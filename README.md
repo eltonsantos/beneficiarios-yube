@@ -48,13 +48,13 @@ $ yarn start
 
 ## 💻 Project
 
-This project was developed for testing in the company **[Yube](https://yube.com.br/)** to be Fullstack, **in May 31, 2021**. For the first version, unfortunately many features are not yet available. 🥺
+This project was developed for testing in the company **[Yube](https://yube.com.br/)** to be Fullstack, **in May 31, 2021**. For the first version, unfortunately many features are not available yet. 🥺
 
 To access the project **[Beneficiarios-Yube](https://beneficiarios-yube.netlify.app)** enter with email: **admin@yube.com** and password: **123**
 
 ## 🔖 Layout
 
-The layout was created from absolute zero using the TailWindCSS framework.
+The layout was created from scratch using the TailWindCSS framework.
 
 ## 🐾 Next steps
 
@@ -63,8 +63,8 @@ The layout was created from absolute zero using the TailWindCSS framework.
 - [ ] Implementar função de adicionar dependentes 👶
 - [ ] Implementar função de mudar o parecer 📃
 - [ ] Modo dark mode para os olhos agradecerem 😎
-- [ ] Ajustar alguns detalhes para o Layout ficar responsivo 🥰
-- [ ] permitir que os dados do colaborador possam ser editados 🤩
+- [ ] Ajustar alguns detalhes para o Layout ficar bem resposivo e fofo 🥰
+- [ ] Permitir que os dados dos colaboradores possam ser editados ✏
 - [ ] Validar os campos para evitar fazerem besteira 🐱‍💻
 - [ ] Construir filtro para mostrar os colaboradores que possuem um ou mais dependentes 👨‍👨‍👦‍👦
 - [ ] Criar uma busca por nome e cpf 🔎
