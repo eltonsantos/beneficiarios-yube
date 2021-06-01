@@ -1,46 +1,47 @@
-import { Link, useParams } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 
 const Details = () => {
 
-  const { id } = useParams();
+  let {state} = useLocation();
 
+  function submit() {
+    alert('Ainda não implementada')
+  }
 
   return (
     <>
       <h3 className="px-5 py-5 space-y-6 sm:p-6 text-indigo-500 font-bold text-2xl">Colaborador</h3>
 
-      
-
       <div className="grid sm:grid-flow-col grid-rows-1 sm:grid-rows-1 sm:grid-cols-2 gap-2 p-2">
 
         <div className="">
 
-        <Link to="/admin">Voltar</Link>
+        <Link to="/admin" className="px-5 text-indigo-500 hover:text-gray-400">Voltar</Link>
 
           <header className="flex flex-wrap items-center p-4 md:py-8">
             <div className="md:w-3/12 md:ml-1">
-              <img className="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full border-2 border-indigo-600 p-1" src="https://avatars.githubusercontent.com/u/1292594?v=4" alt="profile" />
+              <img className="w-20 h-20 md:w-40 md:h-40 object-cover rounded-full border-2 border-indigo-600 p-1" src={state.avatar} alt={state.name} />
             </div>
 
             <div className="w-8/12 md:w-7/12 ml-9">
               <div className="md:flex md:flex-wrap md:items-center mb-4">
                 <h2 className="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
                   <div><b>Nome Completo:</b></div>
-                    { id }
+                   { state.name } { state.surname}
                 </h2>
               </div>
 
               <div className="md:flex md:flex-wrap md:items-center mb-4">
                 <h2 className="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
                   <div><b>CPF:</b></div>
-                  123.456.789-00
+                  { state.cpf }
                 </h2>
               </div>
 
               <div className="md:flex md:flex-wrap md:items-center mb-4">
                 <h2 className="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
                   <div><b>Benefício Solicitado:</b></div>
-                    Seguro desemprego
+                    { state.benefitSelected }
                   </h2>
               </div>
 
@@ -107,6 +108,7 @@ const Details = () => {
           <div className="text-right sm:px-0 pt-2">
             <button
               type="submit"
+              onClick={submit}
               className="inline-flex justify-center py-2 px-4 border border-transparent shadow-sm text-sm font-medium rounded-md text-white bg-indigo-600 hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500"
             >
               Enviar

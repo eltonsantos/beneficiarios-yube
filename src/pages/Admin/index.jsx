@@ -4,12 +4,14 @@ import { ToastContainer, toast } from 'react-toastify';
 
 import { store } from '../../services/firebaseconfig';
 
-import { Link } from 'react-router-dom';
+import { useHistory } from 'react-router-dom';
 
 const Admin = () => {
 
   const [list, setList] = useState([]);
   const notify = () => toast.success("Colaborador removido com sucesso");
+
+  let history = useHistory();
 
   useEffect(() => {
     const getCollaborators = async () => {
@@ -31,6 +33,10 @@ const Admin = () => {
     } catch (e) {
       console.log(e);
     }
+  }
+
+  function details(col){
+    history.push('/details', col)
   }
 
   return (
@@ -113,9 +119,9 @@ const Admin = () => {
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 
-                              <Link to={`/details/${col.id}`} className="inline-block text-gray-500 hover:text-indigo-700 mr-5 font-bold">
+                              <button onClick={() => { details(col) }} className="inline-block text-gray-500 hover:text-indigo-700 mr-5 font-bold">
                                 Ver Detalhes
-                            </Link>
+                            </button>
 
                               <button onClick={(id) => { remove(col.id) }} className="inline-block text-gray-500 hover:text-red-700 font-bold focus:outline-none">
                                 Remover
