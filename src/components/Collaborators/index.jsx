@@ -1,5 +1,8 @@
 import { useState } from 'react';
 
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 import { store } from '../../services/firebaseconfig';
 
 import Dependents from '../Dependents';
@@ -13,6 +16,8 @@ const Collaborators = () => {
   const [benefitSelected, setBenefitSelected] = useState('99');
   const [avatar, setAvatar] = useState('https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_960_720.png');
   const [, setList] = useState([]);
+
+  const notify = () => toast.success("Colaborador cadastrado com sucesso");
 
   const addCollaborator = async (e) => {
     e.preventDefault();
@@ -30,6 +35,7 @@ const Collaborators = () => {
       const { docs } = await store.collection('collaborators').get() || [];
       const listing = docs.map(collaborator => ({ id: collaborator.id, ...collaborator.data() }));
       setList(listing);
+      notify();
     }  catch (e) {
       console.log(e);
     }
@@ -85,7 +91,9 @@ const Collaborators = () => {
 
   return (
     <>
+      <ToastContainer />
       <div className="grid grid-flow-col grid-rows-1 sm:grid-rows-1 sm:grid-cols-2 gap-2">
+
         <form onSubmit={addCollaborator}>
 
           <div className="modal-wrapper invisible fixed bg-gray-700 bg-opacity-30 w-screen h-screen flex items-center justify-center">
@@ -144,6 +152,7 @@ const Collaborators = () => {
                     </label>
               <select
                 className="mt-1 block w-full py-3 px-4 border-gray-300 bg-gray-200 rounded-md shadow-sm focus:bg-white   focus:outline-none focus:ring-indigo-500 focus:border-indigo-500 sm:text-sm focus:ring-2 focus:ring-offset-2"
+                value={benefitSelected}
                 onChange={(e) => { setBenefitSelected([e.target.value]) }}
               >
                 <option value='99'>Selecione um benefício</option>
