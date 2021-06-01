@@ -1,11 +1,21 @@
+import { Link, useParams } from 'react-router-dom';
+
 const Details = () => {
+
+  const { id } = useParams();
+
+
   return (
     <>
       <h3 className="px-5 py-5 space-y-6 sm:p-6 text-indigo-500 font-bold text-2xl">Colaborador</h3>
 
+      
+
       <div className="grid sm:grid-flow-col grid-rows-1 sm:grid-rows-1 sm:grid-cols-2 gap-2 p-2">
 
         <div className="">
+
+        <Link to="/admin">Voltar</Link>
 
           <header className="flex flex-wrap items-center p-4 md:py-8">
             <div className="md:w-3/12 md:ml-1">
@@ -16,7 +26,7 @@ const Details = () => {
               <div className="md:flex md:flex-wrap md:items-center mb-4">
                 <h2 className="text-lg inline-block font-light md:mr-2 mb-2 sm:mb-0">
                   <div><b>Nome Completo:</b></div>
-                  Elton Santos
+                    { id }
                 </h2>
               </div>
 

@@ -6,7 +6,7 @@ import Details from '../pages/Details';
 const AuthRoutes = () => (
   <Switch>
     <Route path="/admin" component={Admin} />
-    <Route path="/details" component={Details} />
+    <Route path="/details/:id" component={Details} />
   </Switch>
 )
 

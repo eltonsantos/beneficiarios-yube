@@ -113,9 +113,9 @@ const Admin = () => {
                             </td>
                             <td className="px-5 py-5 border-b border-gray-200 bg-white text-sm">
 
-                              <Link to="/details" className="inline-block text-gray-500 hover:text-indigo-700 mr-5 font-bold">
+                              <Link to={`/details/${col.id}`} className="inline-block text-gray-500 hover:text-indigo-700 mr-5 font-bold">
                                 Ver Detalhes
-                      </Link>
+                            </Link>
 
                               <button onClick={(id) => { remove(col.id) }} className="inline-block text-gray-500 hover:text-red-700 font-bold focus:outline-none">
                                 Remover
