@@ -10,8 +10,6 @@
   <a href="#-next-steps">Next steps</a>
 </p>
 
-<br>
-
 <h1 align="center">
     <a href="https://beneficiarios-yube.netlify.app" target="_blank">
       <img alt="Beneficiários Yube" title="Beneficiários Yube" src=".github/cadastro.png" />
