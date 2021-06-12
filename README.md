@@ -62,7 +62,7 @@ The layout was created from scratch using the **TailWindCSS** framework.
 - [ ] Implementar função de adicionar dependentes 👶
 - [ ] Implementar função de mudar o parecer 📃
 - [ ] Modo dark mode para os olhos agradecerem 😎
-- [ ] Ajustar alguns detalhes para o Layout ficar bem resposivo e fofo 🥰
+- [ ] Ajustar alguns detalhes para o Layout ficar bem responsivo e fofo 🥰
 - [ ] Permitir que os dados dos colaboradores possam ser editados ✏
 - [ ] Validar os campos para evitar fazerem besteira 🐱‍💻
 - [ ] Construir filtro para mostrar os colaboradores que possuem um ou mais dependentes 👨‍👨‍👦‍👦
